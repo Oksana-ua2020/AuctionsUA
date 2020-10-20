@@ -1,24 +1,27 @@
-body{
-    margin: 0%;
-    padding: 0%;
+body {
+    margin: 0;
+    padding: 0;
 }
-.h1, h2, h3, h4, h5{
-    margin: 0%;
-    padding: 0%;
-    text-decoration: none;  
-    color: antiquewhite; 
-}
-.tit__img{
-    display: inline-block;
-    width: 240px;
-    align-items: center;  
-}
-.heder1{
+
+.header {
     background-color: black;
-    margin: 0%;
-    padding: 0%;   
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 74px;
-    align-items: flex-start;
-    justify-content: stretch;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 240px;
+    transform: skewY(20deg);
+}
+.header-logo2 {
+    color: white;
+}
+.header-dot {
+    color: #E50D7C;
 }
