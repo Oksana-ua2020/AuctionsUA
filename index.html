@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AuctionsUA</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="header">
-                <h1 class="logo"><i>Bidding.UA</i></h1>
+        <div class="logo-wrap">
+            <h1 class="logo"><i>Bidding.UA</i></h1>
         </div>
-        <div class="header">
-                <input class="searchh" type="search" class="input" name="quest" placeholder="Найти...">
-        </div>
-        <div class="header">
-            <select name="fin">
+        <div class="search-wrap">
+            <input class="search" type="search" name="quest" placeholder="Найти...">
+            <select class="test11" name="fin">
                 <option value="0" selected="selected">Активные</option>
                 <option value="1">Закрытые</option>
             </select>
-            <button type="submit" name="search" value="1">Поиск</button>
+            <button class="test12" type="submit" name="search" value="1">Поиск</button>
         </div>
-        <div class="header">
-            <div class="row">
-                <li>
-                    <a href="#">UAH</a>
-                </li>
-                <li>
-                    <a href="#">USD</a>
-                </li>
-                <li>
-                    <a href="#">EUR</a>
-                </li>
+        <div class="menu-wrap">
+            <div class="exchange-rates">
+                <div class="exchange-rates__item">
+                    <a class="exchange-rates__link" href="#">UAH</a>
+                </div>
+                <div class="exchange-rates__item">
+                    <a class="exchange-rates__link" href="#">USD</a>
+                </div>
+                <div class="exchange-rates__item">
+                    <a class="exchange-rates__link" href="#">EUR</a>
+                </div>
             </div>
-            <div class="row">
-                <li>
+            <nav class="navigation">
+                <div>
                     <a href="#">Поддержка</a>
-                </li>
-                <li>
+                </div>
+                <div>
                     <a href="#">Продать</a>
-                </li>
-                <li>
+                </div>
+                <div>
                     <a href="#">Вход</a>
-                </li>
-                 <li>
+                </div>
+                <div>
                     <a href="#">Регистрация</a>
-                </li>
-           </div>
-        </div>    
+                </div>
+            </nav>
+        </div>
     </header>
 </body>
+
 </html>
