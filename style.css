@@ -26,13 +26,14 @@ body {
     font-weight: 100;
     font-style: initial;
     font-size: 300%;
-    text-align: left !important;
+    text-align: left;
     padding-left: 30px;
 }
 
 .search-wrap {
     display: flex;
     border: 1px solid black;
+    width: 500px;
 }
 
 .search {
@@ -40,7 +41,7 @@ body {
     height: 40px;
     justify-content: flex-end;
     border: none;
-    padding-left: .5rem !important;
+    padding-left: .5rem;
 }
 
 .exchange-rates,
@@ -50,29 +51,22 @@ body {
     justify-content: space-around;
 }
 
-.exchange-rates__item {
-    background: red;
-    border-radius: 1rem;
-    padding: 0rem 1rem;
-    transition: 1s;
-}
-
 .exchange-rates__item__ua,
 .exchange-rates__item__us,
 .exchange-rates__item__eu {
     width: 100px;
-    height: 23px;
+    height: 20px;
     padding: 0rem 1rem;
-    transition: 1s;
     box-sizing: border-box;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid transparent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .exchange-rates__item__ua {
@@ -98,9 +92,7 @@ body {
 .exchange-rates__item__ua:hover,
 .exchange-rates__item__us:hover,
 .exchange-rates__item__eu:hover {
-    transition: 1s;
-    /* border: 1px solid grey; */
-    background-image: url(img/eu2.png);
+    border: 1px solid grey;
 }
 
 .seek1,
@@ -124,7 +116,7 @@ body {
     font-size: 100%;
 }
 
-.row {
+.header-wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -137,27 +129,30 @@ body {
     padding: 1px;
 }
 
-.test-row {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 500px;
-    height: 200px;
-    background-color: black;
+.contant-main {
+    height: calc(100vh - 100px) ;
+    overflow: auto;
 }
 
-.test-element {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    box-sizing: border-box;
-
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
 }
 
-.test-element:hover {
-    border: 5px solid red;
-    transition: 1s;
+.aside-main, .contant {
+    background-color: rgb(186, 207, 177);
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 750px;
+}
+
+.aside-main {
+    width: 300px;
+}
+
+.contant {
+    width: 100%;
+    margin-right: 20px;
 }
