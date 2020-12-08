@@ -155,4 +155,13 @@ body {
 .contant {
     width: 100%;
     margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pic {
+    width: 200px;
+    height: 175px;
+    font-size: 16px;
+    border: 1px solid black;
+    margin: 20px 20px;
 }
