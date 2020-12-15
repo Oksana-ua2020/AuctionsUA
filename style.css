@@ -4,17 +4,21 @@ body {
 }
 
 .header {
-    background: linear-gradient(to top, #F6EFD2, #CEAD78);
+    border: 1px solid maroon;
     margin: 0;
     padding: 0 5vw;
     height: 74px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: ghostwhite;
+    color: ghostwhite;
 }
 
 .header-logo-wrap {
     display: flex;
+    background-color: ghostwhite;
+
 }
 
 .logo {
@@ -93,6 +97,7 @@ body {
 .exchange-rates__item__us:hover,
 .exchange-rates__item__eu:hover {
     border: 1px solid grey;
+    cursor: pointer;
 }
 
 .seek1,
@@ -157,11 +162,43 @@ body {
     margin-right: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .pic {
     width: 200px;
     height: 175px;
-    font-size: 16px;
     border: 1px solid black;
     margin: 20px 20px;
+}
+
+.pic-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    flex-shrink: 0;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footer-item {
+    color: maroon;
+    flex-wrap: wrap;
+    font-style: unset;
+    align-items: flex-end;
+}
+
+.selectQuantityPict {
+    height: 50px;
+    margin: 20px;
 }

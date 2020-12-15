@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="header-logo-wrap">
-            <img src="img/hammer2.png" alt="Молоток">
+            <img src="img/gavel.png" alt="Молоток">
             <h1 class="logo"><i>Bidding.UA</i></h1>
         </div>
         <div class="search-wrap">
@@ -58,12 +58,27 @@
                 <aside class="aside-main">
 
                 </aside>
+             
                 <section class="contant">
-                        <div id="pic-img"></div>
+                <div class="selectQuantityPict">
+                <p><i>Количество изображений</i></p>
+                <p><select id="Quantity" onchange="selectQuantity(value)">
+                        <option selected = "selected" value="10">10</option>
+                        <option value="30" >30</option>
+                        <option value="50">50</option>
+                    </select></p>
+                </div>
+                        <div class="pic-img" id="pic-img"></div>
                 </section>
             </div>
         </form>
 </main>
+    <footer class="footer">
+        <div>
+            <i class="footer-item"> &#169 MySite.com. All rights reserved.</i>
+        </div>
+    </footer>
+
     <script defer src="main.js"></script>
 </body>
 
